@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Card({ imgUrl, title, description }) {
+
   console.log("title", title);
   return (
     <div className="text-2xl font-sans shadow bg-white">
