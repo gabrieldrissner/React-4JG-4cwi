@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function Card({ imgUrl, title, description }) {
-
-  console.log("title", title);
+  console.log("title", description);
   return (
-    <div className="text-2xl font-sans shadow bg-white">
+    <div className="text-2xl font-sans shadow ">
       <div className="">
-        <img src={imgUrl} className="w-full h-32 object-cover" />
+        <img src={imgUrl} className="h-32 object-cover" alt="" />
       </div>
       <div className="p-4">
         <div className="font-bold">{title}</div>
