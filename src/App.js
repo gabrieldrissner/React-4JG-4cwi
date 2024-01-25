@@ -2,11 +2,24 @@ import Person from "./christmas/Person";
 import Button from "./components/Button";
 import Card from "./components/Card";
 import PeopleContainer from "./components/PeopleContainer";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+]);
+
 
 
 function App() {
-  return (
+  return 
 
+<RouterProvider router={router} />;}
 <div className="App">
 <PeopleContainer/></div>
 
@@ -47,7 +60,5 @@ function App() {
     //   <Button name="Sam will" age=" einen Leberkäs Semmel mit Ketchup Majo" />
     //   <Button name="Sam will" age=" eine Rote Ampel" />
     // </div>
-  );
-}
 
 export default App;
