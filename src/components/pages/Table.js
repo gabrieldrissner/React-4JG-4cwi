@@ -1,11 +1,10 @@
 import React from "react";
 import Menu from "../header/Menu";
 
-export default function Home() {
+export default function Table() {
   return (
     <div>
       <Menu />
-      <h1>STartseite</h1>
     </div>
   );
 }
