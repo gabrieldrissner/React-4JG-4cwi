@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Table from "./components/pages/Table";
+import Matchday from "./components/pages/Matchday";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/matchday",
-    element: <div>matchday!</div>,
+    element: <Matchday/>,
   },
 ]);
 
