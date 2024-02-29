@@ -1,12 +1,12 @@
 import React from "react";
 import Menu from "../header/Menu";
-import TableData from "../content/TableData";
+import TableDataFull from "../content/TableDataFull";
 
 export default function Table() {
   return (
     <div>
       <Menu />
-      <TableData/>
+      <TableDataFull/>
     </div>
   );
 }

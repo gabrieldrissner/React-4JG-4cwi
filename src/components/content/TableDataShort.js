@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import TableDesign from "./TableDesign";
-import { useNavigate } from "react-router-dom";
+import TableDesignShort from "./TableDesignShort";
 
-export default function TableData() {
+export default function TableDataShort() {
   const [BundesligaData, setBundesligaData] = useState([]);
 
   useEffect(() => {
@@ -17,7 +16,7 @@ export default function TableData() {
     <div className="">
       <div class="grid grid-cols-2 ">
         {BundesligaData.map((data, index) => {
-          return <TableDesign key={index} index={index} team={data} />;
+          return <TableDesignShort key={index} index={index} team={data} />;
         })}
       </div>
     </div>

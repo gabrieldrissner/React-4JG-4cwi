@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import Menu from "../header/Menu";
-import MatchDesign from '../content/MatchDesign';
+import NextMatchData from "../content/NextMatchData";
 
 export default function Matchday() {
   return (
     <div>
-      <Menu/>
-    <MatchDesign/>
+      <Menu />
+    <NextMatchData/>
     </div>
   );
 }
