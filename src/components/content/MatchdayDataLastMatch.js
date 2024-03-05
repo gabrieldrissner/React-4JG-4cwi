@@ -3,19 +3,32 @@ import MatchDesignLastMatch from "./MatchDesignLastMatch";
 
 export default function MatchdayDataLastMatch() {
   const [matchData, setMatchData] = useState([]);
+  const [filteredMatchData, setFilteredMatchData] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.openligadb.de/getmatchdata/bl1/2023/23").then((res) =>
+    fetch("https://api.openligadb.de/getmatchdata/bl1/2023").then((res) =>
       res.json().then((data) => {
         setMatchData(data);
+        filterMatches(data);
       })
     );
   }, []);
 
+  const filterMatches = (matches) => {
+    let newData = matches.filter((match) => {
+      if (match.group.groupOrderID == 20) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    setFilteredMatchData(newData);
+  };
+
   return (
     <div className="">
       <div className="">
-        {matchData.map((data, index) => {
+        {filteredMatchData.map((data, index) => {
           return (
             <MatchDesignLastMatch key={index} index={index} match={data} />
           );

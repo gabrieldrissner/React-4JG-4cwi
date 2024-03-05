@@ -14,7 +14,7 @@ export default function TableDataShort() {
 
   return (
     <div className="">
-      <div class="grid grid-cols-2 ">
+      <div class="grid grid-cols-2 gap-4">
         {BundesligaData.map((data, index) => {
           return <TableDesignShort key={index} index={index} team={data} />;
         })}

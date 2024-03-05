@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TableDesignFull({ index, team }) {
   return (
-    <div className="p-4 mt-7 h-16 flex items-center gap-4 rounded-2xl bg-[#F2F2F2] hover:bg-slate-100">
+    <div className="p-4 mt-7 h-16 flex items-center gap-4 rounded-2xl bg-[#D9D9D9] hover:bg-slate-100">
       <div className="font-bold">{index + 1}</div>
       <div className="w-8">
         <img src={team.teamIconUrl} />
