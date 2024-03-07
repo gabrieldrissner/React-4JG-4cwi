@@ -3,7 +3,7 @@ export const getFormattedDate = (date) => {
   var options = {
     weekday: "short",
     year: "numeric",
-    month: "long",
+    month: "short",
     day: "numeric",
   };
   const formattedDate = dateObject.toLocaleString("DE-de", options);

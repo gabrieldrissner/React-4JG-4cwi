@@ -5,7 +5,7 @@ export default function NextMatchData() {
   const [matchData, setMatchData] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.openligadb.de/getmatchdata/bl1/2023/23").then((res) =>
+    fetch("https://api.openligadb.de/getmatchdata/bl1/2023/26").then((res) =>
       res.json().then((data) => {
         setMatchData(data);
       })
@@ -14,7 +14,7 @@ export default function NextMatchData() {
 
   return (
     <div className="">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="lg:grid lg:grid-cols-2 gap-4">
         {matchData.map((data, index) => {
           return <NextMatchDesign key={index} index={index} match={data} />;
         })}

@@ -14,7 +14,7 @@ export default function TableDataFull() {
 
   return (
     <div className="">
-      <div class="grid grid-cols-2 gap-4">
+      <div class="lg:grid lg:grid-cols-2  gap-4">
         {BundesligaData.map((data, index) => {
           return <TableDesignFull key={index} index={index} team={data} />;
         })}
