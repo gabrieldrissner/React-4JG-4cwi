@@ -13,10 +13,10 @@ export default function Home() {
       </div>
       <div className=" bg-[#F2F2F2] mt-10 justify-between rounded-2xl mr-10 ml-10">
         <div className="lg:flex justify-between ">
-          <div>
-            <TableDataShort />
+          <div className="mb-10">
+            <TableDataShort /> 
           </div>
-          <div>
+          <div className="mb-10">
             <MatchdayDataLastMatch />
           </div>
         </div>

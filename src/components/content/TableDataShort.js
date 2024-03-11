@@ -14,7 +14,7 @@ export default function TableDataShort() {
 
   return (
     <div className=" flex lg:block justify-center">
-      <div class="md:grid md:grid-cols-2 gap-2 w-1/2">
+      <div class="md:grid md:grid-cols-2 gap-4 lg:ml-5">
         {BundesligaData.map((data, index) => {
           return <TableDesignShort key={index} index={index} team={data} />;
         })}

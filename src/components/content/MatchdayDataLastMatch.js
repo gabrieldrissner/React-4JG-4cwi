@@ -26,7 +26,7 @@ export default function MatchdayDataLastMatch() {
   };
 
   return (
-    <div className="">
+    <div className="flex lg:w-1/2 justify-center">
       <div className="">
         {filteredMatchData.map((data, index) => {
           return (
